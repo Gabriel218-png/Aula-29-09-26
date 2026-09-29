@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Player de Música</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="player">
+
+        <h1>Meu Player de Música</h1>
+
+        <div class="musica-atual">
+            <h2 id="titulo">Nenhuma música selecionada</h2>
+            <p id="artista">Escolha uma música abaixo</p>
+        </div>
+
+        <audio id="audio" controls>
+            <source id="arquivo" src="" type="audio/mpeg">
+        </audio>
+
+        <h2>Lista de músicas</h2>
+
+        <div class="lista">
+
+            <div class="musica" onclick="tocarMusica(0)">
+                <strong>1. Aquela Nega</strong>
+                <span>Heitor Costa</span>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(1)">
+                <strong>2. Sinal</strong>
+                <span>Nadson o Ferinha</span>
+            </div>
+
+            <div class="musica" onclick="tocarMusica(2)">
+                <strong>3. Na imaginação</strong>
+                <span>Adryan Lima</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
